@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/Sapana04/adv-jenkins.git'
+                git 'https://github.com/Sapana04/adv-jenkins.git '
             }
         }
 
