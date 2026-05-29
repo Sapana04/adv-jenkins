@@ -3,13 +3,7 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/Sapana04/adv-jenkins.git'
-            }
-        }
-
-        stage('Build Docker Image') {
+           stage('Build Docker Image') {
             steps {
                 sh 'docker build -t demo-app .'
             }
